@@ -1,0 +1,25 @@
+.container {
+  background-color: aqua;
+  margin: 300px;
+  margin-top: 150px;
+  width: 300px;
+  height: 300px;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+}
+.btn {
+  font-size: 10px;
+  border-radius: 10px;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  padding-right: 40%;
+  padding-left: 40%;
+  border: 2px solid black;
+}
+.btn:hover {
+  background-color: blue;
+}

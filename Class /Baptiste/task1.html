@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="form">
+          <label>number1</label>
+          <input type="number" id="number1" /><br /><br />
+          <label>number2</label>
+          <input type="number" id="number2" /><br /><br />
+        </div>
+        <div class="btn"><button id="btn">=</button><br /><br /></div>
+        <div class="rst">
+          <br /><br />
+          <label for="rst">result</label>
+
+          <input type="number" id="result" />
+        </div>
+      </div>
+    </form>
+    <script>
+      let number1 = document.getElementById("number1");
+      let number2 = document.getElementById("number2");
+      let btn = document.getElementById("btn");
+      let rst = document.getElementById("result");
+
+      btn.onclick = () => {
+        let solution = number1.value + number2.value;
+        rst.innerHTML = solution;
+      };
+    </script>
+  </body>
+</html>

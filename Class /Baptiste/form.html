@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <form on submit="retun validate form()">
+      <label for="first name">first name</label>
+      <input type="text" id="first name" /><br /><br />
+      <label for="first name">last name</label>
+      <input type="text" id="last name=" /><br /><br />
+      <label for="first name">ages</label>
+      <input type="number" id="ages" /><br /><br />
+      <label for="first name">email</label>
+      <input type="email" id="email" /><br /><br />
+      <input type="submit" value="submit" /><br /><br />
+    </form>
+    <script>
+      function validateform() {
+        let firstname = document.getElementById("first name").value.trim;
+        let lasttname = document.getElementById("last name").value.trim;
+        let ages = document.getElementById("ages").value.trim;
+        let email = document.getElementById("email").value.trim();
+        if (name === "") {
+          alert("fist name can not be impty");
+          return false;
+        }
+        if (name === "") {
+          alert("last name can not be impty");
+          return false;
+        }
+        if (age === "" > 25) {
+          alert("ages must be number between1and 25");
+          return false;
+        }
+        if (!emailpattern.test(email)) {
+          alert("please enter avalid email adress");
+          return false;
+        }
+        alert("form submited successfully!");
+        return true;
+      }
+    </script>
+  </body>
+</html>
